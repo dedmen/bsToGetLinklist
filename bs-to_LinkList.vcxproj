@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B53E6F05-33E0-31B8-BA51-FAAF9A59D72E}</ProjectGuid>
+    <RootNamespace>bs-to_LinkList</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>bs-to_LinkList</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>bs-to_LinkList</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">bs-to_LinkList</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">bs-to_LinkList</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\QT5.5-static-mysql\include;..\QT5.5-static-mysql\include\QtWidgets;..\QT5.5-static-mysql\include\QtGui;..\QT5.5-static-mysql\include\QtNetwork;..\QT5.5-static-mysql\include\QtCore;debug;.;..\QT5.5-static-mysql\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings  -MTd -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>J:\Installs\development\c++\QT5.5-static-mysql\lib\qtmaind.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5PlatformSupportd.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qtfreetyped.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Widgetsd.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qwindowsd.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\imageformats\qicod.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Guid.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;glu32.lib;opengl32.lib;gdi32.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qtharfbuzzngd.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\bearer\qgenericbearerd.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\bearer\qnativewifibearerd.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Networkd.lib;dnsapi.lib;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib\ssleay32MTd.lib;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib\libeay32MTd.lib;User32.lib;Advapi32.lib;Gdi32.lib;Crypt32.lib;crypt32.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Cored.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;mpr.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qtpcred.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>J:\Installs\development\c++\QT5.5-static-mysql\lib;J:\Installs\development\mariaDB\build\libmariadb\Release;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\platforms;J:\Installs\development\c++\QT5.5-static-mysql\plugins\imageformats;J:\Installs\development\c++\QT5.5-static-mysql\plugins\bearer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\bs-to_LinkList.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\QT5.5-static-mysql\include;..\QT5.5-static-mysql\include\QtWidgets;..\QT5.5-static-mysql\include\QtGui;..\QT5.5-static-mysql\include\QtNetwork;..\QT5.5-static-mysql\include\QtCore;release;.;..\QT5.5-static-mysql\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings  -MT -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>J:\Installs\development\c++\QT5.5-static-mysql\lib\qtmain.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Widgets.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\platforms\qwindows.lib;winspool.lib;shlwapi.lib;rpcrt4.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5PlatformSupport.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qtfreetype.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\imageformats\qico.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Gui.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;glu32.lib;opengl32.lib;gdi32.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qtharfbuzzng.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\bearer\qgenericbearer.lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\bearer\qnativewifibearer.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Network.lib;dnsapi.lib;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib\ssleay32MT.lib;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib\libeay32MT.lib;User32.lib;Advapi32.lib;Gdi32.lib;Crypt32.lib;crypt32.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\Qt5Core.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;mpr.lib;J:\Installs\development\c++\QT5.5-static-mysql\lib\qtpcre.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>J:\Installs\development\c++\QT5.5-static-mysql\lib;J:\Installs\development\mariaDB\build\libmariadb\Release;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib;J:\Installs\development\c++\QT5.5-static-mysql\plugins\platforms;J:\Installs\development\c++\QT5.5-static-mysql\plugins\imageformats;J:\Installs\development\c++\QT5.5-static-mysql\plugins\bearer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\bs-to_LinkList.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bs-to_linklist_plugin_import.cpp" />
+    <ClCompile Include="bswidget.cpp" />
+    <ClCompile Include="httpdownloader.cpp" />
+    <ClCompile Include="httprequestjob.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="bswidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">bswidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore bswidget.h -o debug\moc_bswidget.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC bswidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_bswidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">bswidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore bswidget.h -o release\moc_bswidget.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC bswidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_bswidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="httpdownloader.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">httpdownloader.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore httpdownloader.h -o debug\moc_httpdownloader.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC httpdownloader.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_httpdownloader.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">httpdownloader.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore httpdownloader.h -o release\moc_httpdownloader.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC httpdownloader.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_httpdownloader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="httprequestjob.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">httprequestjob.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore httprequestjob.h -o debug\moc_httprequestjob.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC httprequestjob.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_httprequestjob.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">httprequestjob.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore httprequestjob.h -o release\moc_httprequestjob.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC httprequestjob.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_httprequestjob.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore mainwindow.h -o debug\moc_mainwindow.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;J:\Installs\development\c++\QT5.5-static-mysql\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1900 -D_WIN32 -IJ:/Installs/development/c++/QT5.5-static-mysql/mkspecs/win32-msvc2015 -IJ:/Installs/development/c++/bs-to_LinkList -IJ:/Installs/development/c++/QT5.5-static-mysql/include -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtWidgets -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtGui -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtNetwork -IJ:/Installs/development/c++/QT5.5-static-mysql/include/QtCore mainwindow.h -o release\moc_mainwindow.cpp&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_bswidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_bswidget.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_httpdownloader.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_httpdownloader.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_httprequestjob.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_httprequestjob.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_bswidget.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="bswidget.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">bswidget.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;(set QT_PLUGIN_PATH=J:\Installs\development\c++\QT5.5-static-mysql\plugins) &amp; (set PATH=J:\Installs\development\c++\QT5.5-static-mysql\lib;%PATH:)=^)%) &amp; J:\Installs\development\c++\QT5.5-static-mysql\bin\uic.exe bswidget.ui -o ui_bswidget.h&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC bswidget.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_bswidget.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">bswidget.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;(set QT_PLUGIN_PATH=J:\Installs\development\c++\QT5.5-static-mysql\plugins) &amp; (set PATH=J:\Installs\development\c++\QT5.5-static-mysql\lib;%PATH:)=^)%) &amp; J:\Installs\development\c++\QT5.5-static-mysql\bin\uic.exe bswidget.ui -o ui_bswidget.h&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC bswidget.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_bswidget.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;(set QT_PLUGIN_PATH=J:\Installs\development\c++\QT5.5-static-mysql\plugins) &amp; (set PATH=J:\Installs\development\c++\QT5.5-static-mysql\lib;%PATH:)=^)%) &amp; J:\Installs\development\c++\QT5.5-static-mysql\bin\uic.exe mainwindow.ui -o ui_mainwindow.h&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">mainwindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">setlocal&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;(set QT_PLUGIN_PATH=J:\Installs\development\c++\QT5.5-static-mysql\plugins) &amp; (set PATH=J:\Installs\development\c++\QT5.5-static-mysql\lib;%PATH:)=^)%) &amp; J:\Installs\development\c++\QT5.5-static-mysql\bin\uic.exe mainwindow.ui -o ui_mainwindow.h&#x000D;&#x000A;if errorlevel 1 goto VCEnd&#x000D;&#x000A;endlocal</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
